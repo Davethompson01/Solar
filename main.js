@@ -1,34 +1,17 @@
-let block = document.querySelector(".svg")
-let hideDiv = document.querySelector(".hideDiv")
-block.addEventListener('click', function () {
-    hideDiv.style.display = 'block'
-    hideDiv.style.display = 'flex'
-})
-let hide = document.querySelector(".cancel")
-hide.addEventListener('click', function () {
-    hideDiv.style.display = 'none'
-})
-// let sellDiv = document.querySelector(".sameDiv")
-// let swaps = [
-//     {
-//         svg:`<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-//         <circle cx="75" cy="75" r="75" fill="#002D01"/>
-//         <path d="M59.9916 66.9514V70.4411L70.4968 62.8446L59.9916 56V59.1102C55.7638 59.5058 51.849 61.5357 49.0604 64.7783C46.2718 68.0208 44.8238 72.2267 45.0171 76.5223C45.2105 80.8178 47.0304 84.8728 50.0987 87.8449C53.1671 90.817 57.248 92.4778 61.4939 92.4821C65.2757 92.4821 70.4968 91.1345 73.5013 87.9214C77.2516 83.5345 81.7233 72.4874 81.7233 72.4874L68.3257 81.2825C67.4227 82.3146 66.2913 83.1158 65.0241 83.6204C63.7569 84.1251 62.3898 84.319 61.0344 84.1862C59.6791 84.0535 58.374 83.5979 57.2257 82.8567C56.0775 82.1154 55.1187 81.1096 54.4277 79.9213C53.7367 78.733 53.333 77.396 53.2497 76.0196C53.1664 74.6431 53.4059 73.2662 53.9485 72.0014C54.4911 70.7366 55.3214 69.6197 56.3717 68.742C57.422 67.8643 58.6624 67.2507 59.9916 66.9514Z" fill="white"/>
-//         <path d="M90.0084 83.0522V79.5625L79.5032 87.1625L90.0084 94V90.8933C94.2362 90.4977 98.151 88.4678 100.94 85.2253C103.728 81.9827 105.176 77.7768 104.983 73.4813C104.789 69.1857 102.97 65.1307 99.9013 62.1586C96.8329 59.1865 92.752 57.5258 88.5061 57.5214C84.7243 57.5214 79.5032 58.8691 76.5022 62.0821C72.7484 66.4691 68.2767 77.5162 68.2767 77.5162L81.6743 68.721C82.5776 67.6912 83.7086 66.8922 84.9749 66.3892C86.2412 65.8863 87.607 65.6938 88.9608 65.8272C90.3146 65.9607 91.6181 66.4164 92.7649 67.1572C93.9116 67.898 94.8692 68.9029 95.5595 70.0899C96.2498 71.2769 96.6532 72.6123 96.7368 73.9873C96.8204 75.3623 96.5819 76.7378 96.0407 78.0016C95.4994 79.2654 94.6708 80.3817 93.6225 81.2594C92.5742 82.1372 91.3358 82.7515 90.0084 83.0522Z" fill="white"/>
-//         </svg>`,
-//         sell:'Sell and Swap',
-//         small:'Our outright sale option allows customers to pay the outright cost to purchase a system.'
-//     }
-// ] 
-// swaps.map(swap=> {
-//     let div = document.createElement("div")
-//     div.style.background = 'blue'
-
-
-//     div.appendChild(swap)
-//     sellDiv.appendChild(div)
-// })
-
+function hamMenu() {
+    let block = document.querySelector(".svg")
+    let hideDiv = document.querySelector(".hideDiv")
+    block.addEventListener('click', function () {
+        hideDiv.style.display = 'block'
+        hideDiv.style.display = 'flex'
+    })
+    let hide = document.querySelector(".cancel")
+    hide.addEventListener('click', function () {
+        hideDiv.style.display = 'none'
+    })
+    
+}
+module.exports = {hamMenu}
 
 
 let sellDiv = document.querySelector(".sameDiv");
@@ -114,7 +97,7 @@ happys.map(happy => {
     div.style.justifyContent = `center`
     div.style.marginTop = `30px`
     let h1 = document.createElement("h1")
-    h1.textContent = happy.number 
+    h1.textContent = happy.number
     h1.style.fontSize = `2.6rem`
     let p = document.createElement("p")
     p.textContent = happy.text
@@ -151,7 +134,7 @@ let qualitys = [
         `,
         sell: `Highly Experienced`,
         small: `7 years plus of experience in providing sustainable solar electricity for both small and big companies.`
-    },{
+    }, {
         svg: `<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="75" cy="75" r="75" fill="#002D01"/>
         <path d="M93.0003 54.4738C90.6134 54.4738 88.3242 53.4756 86.6363 51.699C84.9485 49.9223 84.0003 47.5126 84.0003 45M93.0003 60.7896C90.6134 60.7896 88.3242 61.7877 86.6363 63.5644C84.9485 65.3411 84.0003 67.7507 84.0003 70.2633M57.0001 54.4738C59.3871 54.4738 61.6763 53.4756 63.3641 51.699C65.0519 49.9223 66.0002 47.5126 66.0002 45M57.0001 60.7896C59.3871 60.7896 61.6763 61.7877 63.3641 63.5644C65.0519 65.3411 66.0002 67.7507 66.0002 70.2633M54.0001 99.9099H60.7801C63.8101 99.9099 66.8792 100.245 69.8282 100.883C75.0932 102.021 80.5105 102.147 85.8183 101.255C88.4223 100.813 90.9783 100.134 93.2943 98.9593C95.3824 97.8951 97.9414 96.4014 99.6604 94.7246C101.376 93.0509 103.164 90.313 104.43 88.1719C105.522 86.334 104.994 84.0824 103.272 82.715C102.305 81.9741 101.139 81.575 99.9424 81.575C98.7458 81.575 97.58 81.9741 96.6124 82.715L91.1913 87.0256C89.0913 88.6993 86.7963 90.2372 84.0633 90.6951C83.7333 90.7488 83.3883 90.7993 83.0283 90.8435M83.0283 90.8435C82.9184 90.8569 82.8084 90.8695 82.6983 90.8814M83.0283 90.8435C83.5085 90.7068 83.9487 90.4463 84.3093 90.0856C84.7614 89.6739 85.1305 89.1711 85.395 88.6068C85.6594 88.0425 85.8138 87.4282 85.8491 86.8C85.8843 86.1719 85.7996 85.5427 85.6001 84.9496C85.4006 84.3565 85.0902 83.8114 84.6873 83.3466C84.2964 82.8897 83.841 82.4989 83.3373 82.1876C74.9462 76.9171 61.8871 80.9308 54.0001 86.8203M83.0283 90.8435C82.9199 90.8683 82.8092 90.881 82.6983 90.8814M82.6983 90.8814C80.889 91.0728 79.0663 91.077 77.2562 90.894M91.2423 68.4128C93.0003 66.5623 93.0003 63.5875 93.0003 57.6317C93.0003 51.6758 93.0003 48.7011 91.2423 46.8505C89.4843 45 86.6583 45 81.0003 45H69.0002C63.3421 45 60.5161 45 58.7581 46.8505C57.0001 48.7011 57.0001 51.6758 57.0001 57.6317C57.0001 63.5875 57.0001 66.5623 58.7581 68.4128C60.5161 70.2633 63.3421 70.2633 69.0002 70.2633H81.0003C86.6583 70.2633 89.4843 70.2633 91.2423 68.4128ZM78.0002 57.6317C78.0002 58.4692 77.6842 59.2724 77.1216 59.8647C76.5589 60.4569 75.7959 60.7896 75.0002 60.7896C74.2046 60.7896 73.4415 60.4569 72.8789 59.8647C72.3163 59.2724 72.0002 58.4692 72.0002 57.6317C72.0002 56.7941 72.3163 55.9909 72.8789 55.3987C73.4415 54.8065 74.2046 54.4738 75.0002 54.4738C75.7959 54.4738 76.5589 54.8065 77.1216 55.3987C77.6842 55.9909 78.0002 56.7941 78.0002 57.6317ZM49.5 79.7371C51.9853 79.7371 54.0001 81.8579 54.0001 84.474V100.264C54.0001 102.88 51.9853 105 49.5 105C47.0147 105 45 102.88 45 100.264V84.474C45 81.8579 47.0147 79.7371 49.5 79.7371Z" stroke="white" stroke-width="5" stroke-linecap="round"/>
@@ -192,42 +175,37 @@ qualitys.map(quality => {
 let partner = document.querySelector(".partner")
 let client = document.querySelector(".clients")
 let clientObject = [
-    {image:`/cl and partner/image 10.png`},
-    {image:`/cl and partner/image 10.png`},
-    {image:`/cl and partner/image 10.png`},
-    {image:`/cl and partner/image 10.png`}
+    { image: `/cl and partner/image 10.png` },
+    { image: `/cl and partner/image 10.png` },
+    { image: `/cl and partner/image 10.png` },
+    { image: `/cl and partner/image 10.png` }
 ]
 clientObject.map(object => {
     let div = document.createElement("div")
     let image = document.createElement("img")
     image.src = object.image
     div.appendChild(image)
-    
-client.style.display = 'grid'; 
-client.style.gridTemplateColumns = 'repeat(2, 1fr)';
+
+    client.style.display = 'grid';
+    client.style.gridTemplateColumns = 'repeat(2, 1fr)';
     client.appendChild(div)
 })
 clientObject.map(object => {
     let div = document.createElement("div")
-    
+
     let image = document.createElement("img")
     image.src = object.image
-    div.appendChild(image)  
-    partner.style.display = 'grid'; 
-    partner.style.gridTemplateColumns = 'repeat(2, 1fr)';  
+    div.appendChild(image)
+    partner.style.display = 'grid';
+    partner.style.gridTemplateColumns = 'repeat(2, 1fr)';
     partner.appendChild(div)
 })
 
-
-
-
-
-
 let threepics = document.querySelector(".threePics")
 let threeImg = [
-    {image:`/three background pics/Frame 712.png`},
-    {image:`/three background pics/Frame 712.png`},
-    {image:`/three background pics/Frame 712.png`}
+    { image: `/three background pics/Frame 712.png` },
+    { image: `/three background pics/Frame 712.png` },
+    { image: `/three background pics/Frame 712.png` }
 ]
 threeImg.map(three => {
     let div = document.createElement("div")
@@ -239,3 +217,34 @@ threeImg.map(three => {
     div.appendChild(image)
     threepics.appendChild(div)
 })
+
+let rounded = document.querySelector(".rounded");
+let rounds = [
+    {
+        image: `/rounded/Rectangle 130.png`,
+        sell: 'Career',
+        small: 'Explore available opportunities on the UNAB team.'
+    }, {
+        image: `/rounded/Rectangle 130.png`,
+        sell: `Career`,
+        small: `Explore available opportunities 
+        on the UNAB team.`
+    }, {
+        image: `
+        /rounded/Rectangle 130.png
+        `,
+        sell: `Career`,
+        small: `Explore available opportunities 
+        on the UNAB team.`
+    }
+];
+
+rounds.forEach(round => {
+    rounded.innerHTML += `
+        <div style="margin-top: 2rem; border-radius: 12px; width: 343px; display: grid; gap: 2.5rem; box-shadow: 0 0 5px gray; place-items: center; padding-bottom: 3rem;">
+            <img src="${round.image}" style="width: 100%;">
+            <h1 style="font-size: 24px; color: #35A137;">${round.sell}</h1>
+            <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
+        </div>
+    `;
+});

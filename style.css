@@ -174,7 +174,64 @@ button>a{
     gap: 2.5rem;
     text-align: center;
 }
+.caseStudies>p{
+    width: 350px;
+}
 .threePics>p{
     border: 1px solid #E27B16;
     padding: 1rem;
+}
+.learn{
+    /* background-color: red; */
+    height: 150px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    text-align: center;
+}
+.learn>p>a{
+    padding: 1rem 2rem ;
+    border-radius: 12px;
+    color: #E27B16;
+    border: 2px solid #E27B16;
+}
+.more{
+    margin-top: 1rem;
+    text-align: center;
+    display: grid;
+    height: 150px;
+}
+.more>h1{
+    font-size: 2.3rem;
+}
+footer{
+    color: white;
+    height: 800px;
+    display: grid;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+}
+footer>div:first-child(){
+    display: block;
+}
+.t1-class{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.t1{
+    display: grid;
+    gap: 1rem;
+    font-size:13px;
+}
+.t1>h1{
+    font-size: 1.4rem;
+}
+.support{
+    display: grid;
+    /* gap: 1rem; */
+}
+.socials>h1{
+    font-size: 1.4rem;
 }
