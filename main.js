@@ -1,18 +1,14 @@
-function hamMenu() {
+
     let block = document.querySelector(".svg")
     let hideDiv = document.querySelector(".hideDiv")
     block.addEventListener('click', function () {
-        hideDiv.style.display = 'block'
+        // hideDiv.style.display = 'block'
         hideDiv.style.display = 'flex'
     })
     let hide = document.querySelector(".cancel")
     hide.addEventListener('click', function () {
         hideDiv.style.display = 'none'
     })
-    
-}
-module.exports = {hamMenu}
-
 
 let sellDiv = document.querySelector(".sameDiv");
 let swaps = [

@@ -20,7 +20,7 @@ header{
     background: linear-gradient(335deg,rgb(13,143,65),black 60%);
 }
 .hideDiv{
-    display: none;
+    /* display: none; */
     position: absolute;
     padding: 1rem; 
     align-items: center;
