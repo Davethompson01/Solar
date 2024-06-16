@@ -19,7 +19,7 @@
           <p><a href="/index.html">Home</a></p>
           <p><a href="/aboutus/about.html">About</a></p>
           <p><a href="">Projects</a></p>
-          <p><a href="">Store</a></p>
+          <p><a href="/store/store.html">Store</a></p>
           <p><a href="">FAQS</a></p>
           <p><a href="/contactus/contact.html">Contact Us</a></p>
         </div>
@@ -63,24 +63,32 @@
 
     <div class="get-in-touch bg-black px-4">
       <h1>Get in touch with us</h1>
-      <form method="get">
+      <form method="get" class="py-4">
         <label form="" class="text-white">Full Name/Business Name</label>
-        <input type="text" name="" class="bg-red-400 py-2 w-full" /><br /><br />
+        <input type="text" name="" class="py-2 w-full rounded-lg" /><br /><br />
         <label form="" class="text-white">Phone Number</label><br />
-        <input type="text" name="" class="py-2 w-full" /><br /><br />
+        <input type="text" name="" class="py-2 w-full rounded-lg" />
+        <br /><br />
         <label form="" class="text-white">Email address</label><br />
-        <input type="text" name="" class="py-2 w-full" /><br /><br />
+        <input type="text" name="" class="py-2 w-full rounded-lg" /><br /><br />
         <label form="" class="text-white">Address</label><br />
-        <input type="text" name="" class="py-2 w-full" /><br /><br />
+        <input type="text" name="" class="py-2 w-full rounded-lg" /><br /><br />
 
-        <label form="" class="text-white">How can we help you</label><br />
-        <input
-          type="text"
-          autocomplete="current-password"
-          name=""
-          class="py-20 w-full"
-        /><br /><br />
-        <button class="reset text-white bg-orange-400 w-full">send</button>
+        <label for="comment" class="block text-sm font-medium text-white"
+          >How can we help you</label
+        >
+        <textarea
+          rows="7"
+          placeholder="Enter your comment here..."
+          class="mt-1 block w-full border-gray-300 rounded-md focus:ring"
+        ></textarea>
+
+        <button
+          class="reset text-white grid w-full my-8 rounded-lg p-4"
+          style="background-color: #e27b16"
+        >
+          send
+        </button>
       </form>
     </div>
     <footer
