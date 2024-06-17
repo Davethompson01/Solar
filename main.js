@@ -256,3 +256,39 @@ rounds.forEach((round) => {
         </div>
     `;
 });
+
+const texts = ["Home", "About", "Services", "Contact"]; // Array of texts to display
+let textIndex = 0; // Index to track current text in the array
+let charIndex = 0; // Index to track current character in the current text
+const speed = 100; // Speed of typing in milliseconds
+
+function typeWriter() {
+  if (charIndex < texts[textIndex].length) {
+    // Append next character of the current text
+    document.querySelector(".typewriter").textContent +=
+      texts[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, speed);
+  } else {
+    // Move to the next text in the array
+    setTimeout(eraseText, 1000); // Delay before erasing text
+  }
+}
+
+function eraseText() {
+  if (charIndex > 0) {
+    // Erase one character at a time
+    document.querySelector(".typewriter").textContent = texts[
+      textIndex
+    ].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseText, speed);
+  } else {
+    // Move to the next text in the array
+    textIndex = (textIndex + 1) % texts.length; // Loop through texts array
+    setTimeout(typeWriter, 500); // Delay before typing next text
+  }
+}
+
+// Start the typing animation
+typeWriter();
