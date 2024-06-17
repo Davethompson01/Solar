@@ -214,14 +214,11 @@ let threeImg = [
   { image: `/three background pics/Frame 712.png` },
 ];
 threeImg.map((three) => {
-  let div = document.createElement("div");
-  div.style.width = `100%`;
-  div.style.padding = `1rem`;
-  let image = document.createElement("img");
-  image.src = three.image;
-  image.style.width = `100%`;
-  div.appendChild(image);
-  threepics.appendChild(div);
+  threepics.innerHTML += `
+  <div class="p-4">
+  <img src="${three.image}" alt="" class="w-full" style="height:300px;"/>
+  </div>
+  `;
 });
 
 let rounded = document.querySelector(".rounded");
@@ -249,8 +246,8 @@ let rounds = [
 
 rounds.forEach((round) => {
   rounded.innerHTML += `
-        <div style="margin-top: 2rem; border-radius: 12px; width: 280px; display: grid; gap: 2.5rem; box-shadow: 0 0 5px gray; place-items: center; padding-bottom: 3rem;">
-            <img src="${round.image}" style="width: 280px;">
+        <div class="mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray;">
+            <img src="${round.image}" style="width: 100%;height:400px;">
             <h1 style="font-size: 24px; color: #35A137;">${round.sell}</h1>
             <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
         </div>

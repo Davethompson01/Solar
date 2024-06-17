@@ -27,7 +27,7 @@ let swaps = [
 
         `,
     small: "Blaze a Trail",
-    sell: "Blaze a TrailTackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
+    sell: "Tackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
   },
   {
     svg: `<svg width="150" height="150" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ let swaps = [
         
         `,
     small: "Blaze a Trail",
-    sell: "Blaze a TrailTackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
+    sell: "Tackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
   },
   {
     svg: `
@@ -48,7 +48,7 @@ let swaps = [
 
         `,
     small: "Blaze a Trail",
-    sell: "Blaze a TrailTackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
+    sell: "Tackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
   },
   {
     svg: `<svg width="150" height="150" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ let swaps = [
         </svg>        
         `,
     small: "Blaze a Trail",
-    sell: "Blaze a TrailTackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
+    sell: "Tackle problems head-on. Lead the way.  Build unique services, products, markets and opportunities for all.",
   },
 ];
 swaps.map((swap) => {
@@ -67,6 +67,12 @@ swaps.map((swap) => {
     <h1 class= "text-3xl text-green-500 text-bold">${swap.small}</h1>
     <p class="text-small ">${swap.sell}</p>
     </div>
+
+   
+  </div>
+  
+</div>
+
     `;
 });
 let climate = document.querySelector(".climate");
@@ -110,16 +116,16 @@ let focusObjs = [
 ];
 let firstOBJ = focusObjs[0];
 focusArea.innerHTML += `
-<div class="w-full grid place-items-center gap-y-5 px-3 text-center">
+<div class="w-full grid place-items-center gap-y-12 px-3 text-center">
 <h1 class="text-3xl font-bold">${firstOBJ.h1}</h1>
-<p style="font-size:14px; width:320px;" class="text-#131313">${firstOBJ.p}</p>
+<p style="font-size:14px; width:290px;" class="text-#131313">${firstOBJ.p}</p>
 </div>    
 `;
 for (let i = 1; i < focusObjs.length; i++) {
   focusArea.innerHTML += `
-  <div class="w-full text-center my-8 grid place-items-center">
+  <div class="w-full text-center my-4 grid place-items-center mb-12">
     <h1 class ="text-2xl font-bold text-green-600">${focusObjs[i].h1}</h1>
-    <p class="text-1xl" style="width:330px;">${focusObjs[i].p}</p>
+    <p class="text-1xl" style="width:290px;">${focusObjs[i].p}</p>
   </div>
   `;
 }
@@ -133,22 +139,16 @@ let clientObject = [
   { image: `/cl and partner/image 10.png` },
 ];
 clientObject.map((object) => {
-  let div = document.createElement("div");
-  let image = document.createElement("img");
-  image.src = object.image;
-  div.appendChild(image);
-
-  client.style.display = "grid";
-  client.style.gridTemplateColumns = "repeat(2, 1fr)";
-  client.appendChild(div);
+  client.innerHTML += `
+  <div>
+  <img src="${object.image}"  class="grid gap-x-12" style=" width:140px;" alt="CLIENT" />
+  </div>
+  `;
 });
 clientObject.map((object) => {
-  let div = document.createElement("div");
-
-  let image = document.createElement("img");
-  image.src = object.image;
-  div.appendChild(image);
-  partner.style.display = "grid";
-  partner.style.gridTemplateColumns = "repeat(2, 1fr)";
-  partner.appendChild(div);
+  partner.innerHTML += `
+  <div>
+  <img src="${object.image}" style=" width:140px;" alt="CLIENT" />
+  </div>
+  `;
 });
