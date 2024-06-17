@@ -239,3 +239,35 @@ footer {
     border-color: orange;
   }
 }
+/* @media (min-width: 450px) {
+  .clients > div > img {
+    width: 30px;
+  }
+} */
+@media (min-width: 450px) {
+  /* Targeting direct children <img> elements of <div> elements inside .clients */
+  .clients {
+    display: flex;
+  }
+  .clients > div > img {
+    width: 250px;
+    height: 150px;
+  }
+  .threePics img {
+    width: 300px;
+    height: 200px;
+  }
+  .caseStudies > p {
+    width: 400px;
+  }
+  .endSolution {
+    display: flex;
+    justify-content: space-between;
+  }
+  .first {
+    flex-basis: 55%;
+  }
+  .button {
+    flex-basis: 40%;
+  }
+}
