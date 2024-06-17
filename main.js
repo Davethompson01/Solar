@@ -1,14 +1,3 @@
-// let block = document.querySelector(".svg")
-// let hideDiv = document.querySelector(".hideDiv")
-// block.addEventListener('click', function () {
-//     // hideDiv.style.display = 'block'
-//     hideDiv.style.display = 'flex'
-// })
-// let hide = document.querySelector(".cancel")
-// hide.addEventListener('click', function () {
-//     hideDiv.style.display = 'none'
-// })
-
 const interactions = {
   block: document.querySelector(".svg"),
   hideDiv: document.querySelector(".hideDiv"),
@@ -173,7 +162,7 @@ qualitys.map((quality) => {
   div.style.background = "#fff";
   div.style.marginTop = "2rem";
   div.style.height = "290px";
-  div.style.width = "343px";
+  div.style.width = "300px";
   div.style.borderRadius = `12px`;
   div.style.display = `grid`;
   div.style.placeItems = `center`;
@@ -204,24 +193,19 @@ let clientObject = [
   { image: `/cl and partner/image 10.png` },
 ];
 clientObject.map((object) => {
-  let div = document.createElement("div");
-  let image = document.createElement("img");
-  image.src = object.image;
-  div.appendChild(image);
-
-  client.style.display = "grid";
-  client.style.gridTemplateColumns = "repeat(2, 1fr)";
-  client.appendChild(div);
+  client.innerHTML += `
+  <div>
+  <img src="${object.image}" style=" width:140px;" alt="CLIENT" />
+  </div>
+  `;
 });
-clientObject.map((object) => {
-  let div = document.createElement("div");
 
-  let image = document.createElement("img");
-  image.src = object.image;
-  div.appendChild(image);
-  partner.style.display = "grid";
-  partner.style.gridTemplateColumns = "repeat(2, 1fr)";
-  partner.appendChild(div);
+clientObject.map((object) => {
+  partner.innerHTML += `
+  <div>
+  <img src="${object.image}" style=" width:140px;" alt="CLIENT" />
+  </div>
+  `;
 });
 let threepics = document.querySelector(".threePics");
 let threeImg = [
@@ -265,8 +249,8 @@ let rounds = [
 
 rounds.forEach((round) => {
   rounded.innerHTML += `
-        <div style="margin-top: 2rem; border-radius: 12px; width: 343px; display: grid; gap: 2.5rem; box-shadow: 0 0 5px gray; place-items: center; padding-bottom: 3rem;">
-            <img src="${round.image}" style="width: 100%;">
+        <div style="margin-top: 2rem; border-radius: 12px; width: 280px; display: grid; gap: 2.5rem; box-shadow: 0 0 5px gray; place-items: center; padding-bottom: 3rem;">
+            <img src="${round.image}" style="width: 280px;">
             <h1 style="font-size: 24px; color: #35A137;">${round.sell}</h1>
             <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
         </div>
