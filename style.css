@@ -8,29 +8,13 @@ a {
   text-decoration: none;
 }
 header {
-  width: 100%;
   height: 450px;
-  position: relative;
-  justify-content: left;
-  padding: 20px;
   gap: 3rem;
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(335deg, rgb(13, 143, 65), black 60%);
 }
 .hideDiv {
-  display: none;
-  position: absolute;
-  padding: 1rem;
-  align-items: center;
-  gap: 2rem;
-  /* justify-content: center; */
-  flex-direction: column;
-  background-color: #ccc;
   width: 287px;
   height: 100vh;
-  left: 0%;
-  top: 0%;
 }
 .hideDiv > p > a {
   font-size: 20px;
@@ -45,68 +29,27 @@ header {
 }
 .text {
   width: 280px;
-
-  /* background-color: red; */
 }
-/* .text > h1 {
-  font-size: 2.7rem;
-  letter-spacing: 2px;
-  font-weight: 400;
-  color: #fff;
-} */
 .text > span {
-  /* font-size: 2.7rem;
-  letter-spacing: 2px;
-  font-weight: 700; */
   color: #e3791c;
 }
 .hero {
-  padding: 2.5rem 1rem 2rem 1rem;
-  display: grid;
-  place-content: center;
-  width: 100%;
   background-color: #f9f9f9;
 }
 .service {
   font-weight: 300;
-  width: 100%;
   font-size: 17px;
-  text-align: center;
-  display: grid;
-  gap: 2.5rem;
 }
-.service h1 {
-  font-weight: 1000;
-}
+
 .service p {
   width: 280px;
 }
 .section-1 {
-  width: 100%;
   padding-top: 70px;
-  color: #fff;
-  padding-bottom: 2rem;
-  background-color: #000;
 }
-.aboutUsDiv {
-  padding: 1rem;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.know-more {
-  display: flex;
-  text-align: center;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
+
 .know-more > p {
   border: 2px solid #e27b16;
-  border-radius: 10px;
-  /* width: 230px; */
-  padding: 16px 32px;
 }
 .vid {
   /* padding: 1rem; */
@@ -137,7 +80,7 @@ header {
 .button > button:first-child {
   background-color: #e27b16;
   border: 1px solid #e27b16;
-  padding: 1rem;
+  padding: 0.87rem;
   border-radius: 12px;
 }
 button > a {
@@ -145,7 +88,7 @@ button > a {
 }
 
 .button > button:nth-child(2) {
-  padding: 1rem;
+  padding: 0.87rem;
   border-radius: 12px;
   border: 1px solid #e27b16;
 }
@@ -211,39 +154,7 @@ footer {
 .socials > h1 {
   font-size: 1.4rem;
 }
-.typewriter {
-  display: inline-block;
-  overflow: hidden; /* Ensures the text doesn't overflow */
-  border-right: 0.08em solid orange; /* Simulates the cursor */
-  white-space: nowrap; /* Prevents wrapping */
-  animation: typing 1s steps(10, end), blink-caret 0.5s step-end infinite;
-}
 
-/* Keyframes for typing animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* Keyframes for caret animation */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-/* @media (min-width: 450px) {
-  .clients > div > img {
-    width: 30px;
-  }
-} */
 @media (min-width: 450px) {
   /* Targeting direct children <img> elements of <div> elements inside .clients */
   .clients {

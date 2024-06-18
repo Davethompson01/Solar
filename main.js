@@ -49,29 +49,13 @@ let swaps = [
 ];
 
 swaps.map((swap) => {
-  let div = document.createElement("div");
-  div.style.background = "#fff";
-  div.style.marginTop = "2rem";
-  div.style.height = "290px";
-  div.style.borderRadius = `12px`;
-  div.style.display = `grid`;
-  div.style.placeItems = `center`;
-
-  let svgElement = document.createElement("div");
-  svgElement.innerHTML = swap.svg;
-  div.appendChild(svgElement);
-  let sellText = document.createElement("h1");
-  sellText.textContent = swap.sell;
-  sellText.style.fontSize = `24px`;
-  sellText.style.color = `green`;
-  let smallText = document.createElement("p");
-  smallText.textContent = swap.small;
-  smallText.style.fontSize = `15px`;
-  smallText.style.width = `250px`;
-  smallText.style.textAlign = "center";
-  div.appendChild(sellText);
-  div.appendChild(smallText);
-  sellDiv.appendChild(div);
+  sellDiv.innerHTML += `
+  <div class="bg-white mt-8 rounded-lg grid place-items-center" style="height:280px;">
+  <div>${swap.svg}</div>
+  <h1 class="text-green-800 font-bold" style="font-size:23px;">${swap.sell}</h1>
+  <p class="text-center" style="width:250px; font-size:14px;">${swap.small}</p>
+  </div>
+  `;
 });
 let aboutUs = document.querySelector(".aboutUsDiv");
 let happys = [
@@ -94,26 +78,12 @@ let happys = [
 ];
 happys.map((happy) => {
   let gradient = "linear-gradient( #d2e115, #24a237)";
-  let div = document.createElement("div");
-
-  div.style.width = `290px`;
-  div.style.background = gradient;
-  div.style.borderRadius = `12px`;
-  div.style.height = `120px`;
-  div.style.display = `flex`;
-  div.style.flexDirection = `column`;
-  div.style.justifyContent = `center`;
-  div.style.marginTop = `30px`;
-  let h1 = document.createElement("h1");
-  h1.textContent = happy.number;
-  h1.style.fontSize = `2.6rem`;
-  let p = document.createElement("p");
-  p.textContent = happy.text;
-  p.style.fontSize = `14px`;
-
-  div.appendChild(h1);
-  div.appendChild(p);
-  aboutUs.appendChild(div);
+  aboutUs.innerHTML += `
+  <div style="width:260px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7">
+  <h1 style="font-size:2.6rem;" class="font-bold">${happy.number}</h1>
+  <p style="font-size:14px;" class="font-semibold">${happy.text}</p>
+  </div>
+  `;
 });
 
 let sellFour = document.querySelector(".sameFour");
@@ -158,30 +128,13 @@ let qualitys = [
 ];
 
 qualitys.map((quality) => {
-  let div = document.createElement("div");
-  div.style.background = "#fff";
-  div.style.marginTop = "2rem";
-  div.style.height = "290px";
-  div.style.width = "300px";
-  div.style.borderRadius = `12px`;
-  div.style.display = `grid`;
-  div.style.placeItems = `center`;
-
-  let svgElement = document.createElement("div");
-  svgElement.innerHTML = quality.svg;
-  div.appendChild(svgElement);
-  let sellText = document.createElement("h1");
-  sellText.textContent = quality.sell;
-  sellText.style.fontSize = `24px`;
-  sellText.style.color = `#35A137`;
-  let smallText = document.createElement("p");
-  smallText.textContent = quality.small;
-  smallText.style.fontSize = `16px`;
-  smallText.style.width = `280px`;
-  smallText.style.textAlign = "center";
-  div.appendChild(sellText);
-  div.appendChild(smallText);
-  sellFour.appendChild(div);
+  sellFour.innerHTML += `
+  <div class="bg-white mt-8 rounded-lg grid place-items-center" style="width:280px;height:290px;"> 
+  <div>${quality.svg}</div>
+  <h1 style="font-size:24px; color:#35A137;">${quality.sell}</h1>
+  <p style="font-size:16px;width:280px;" class="text-center">${quality.small}</p>
+  </div>
+  `;
 });
 
 let partner = document.querySelector(".partner");
@@ -253,39 +206,3 @@ rounds.forEach((round) => {
         </div>
     `;
 });
-
-const texts = ["Home", "About", "Services", "Contact"]; // Array of texts to display
-let textIndex = 0; // Index to track current text in the array
-let charIndex = 0; // Index to track current character in the current text
-const speed = 100; // Speed of typing in milliseconds
-
-function typeWriter() {
-  if (charIndex < texts[textIndex].length) {
-    // Append next character of the current text
-    document.querySelector(".typewriter").textContent +=
-      texts[textIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(typeWriter, speed);
-  } else {
-    // Move to the next text in the array
-    setTimeout(eraseText, 1000); // Delay before erasing text
-  }
-}
-
-function eraseText() {
-  if (charIndex > 0) {
-    // Erase one character at a time
-    document.querySelector(".typewriter").textContent = texts[
-      textIndex
-    ].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(eraseText, speed);
-  } else {
-    // Move to the next text in the array
-    textIndex = (textIndex + 1) % texts.length; // Loop through texts array
-    setTimeout(typeWriter, 500); // Delay before typing next text
-  }
-}
-
-// Start the typing animation
-typeWriter();
