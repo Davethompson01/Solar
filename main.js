@@ -247,7 +247,7 @@ let rounds = [
 rounds.forEach((round) => {
   rounded.innerHTML += `
         <div class="mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray;">
-            <img src="${round.image}" style="width: 100%;height:400px;">
+            <img src="${round.image}" style="width: 100%;height:300px;">
             <h1 style="font-size: 24px; color: #35A137;">${round.sell}</h1>
             <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
         </div>
