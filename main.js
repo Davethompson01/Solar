@@ -50,7 +50,7 @@ let swaps = [
 
 swaps.map((swap) => {
   sellDiv.innerHTML += `
-  <div class="bg-white mt-8 rounded-lg grid place-items-center" style="height:280px;">
+  <div class="bg-white mt-8 rounded-lg grid place-items-center " style="height:280px;">
   <div>${swap.svg}</div>
   <h1 class="text-green-800 font-bold" style="font-size:23px;">${swap.sell}</h1>
   <p class="text-center" style="width:250px; font-size:14px;">${swap.small}</p>
@@ -79,7 +79,7 @@ let happys = [
 happys.map((happy) => {
   let gradient = "linear-gradient( #d2e115, #24a237)";
   aboutUs.innerHTML += `
-  <div style="width:260px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7">
+  <div style="width:260px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7 ">
   <h1 style="font-size:2.6rem;" class="font-bold">${happy.number}</h1>
   <p style="font-size:14px;" class="font-semibold">${happy.text}</p>
   </div>

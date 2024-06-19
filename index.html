@@ -14,20 +14,82 @@
   <body>
     <header class="w-full relative justify-left p-5 flex flex-col gap-12">
       <div
-        class="hideDiv hidden absolute p-4 gap-8 flex-col items-center bg-gray-200 left-0 top-0"
+        class="hidden sm:block"
+        style="
+          background: linear-gradient(335deg, rgb(13, 143, 65), black 60%);
+          width: 100%;
+          z-index: 0;
+          height: 100%;
+          position: absolute;
+          background-size: 200% 100%;
+          clip-path: inset(0px 150px 0px 0px);
+          background-position: right;
+          left: 0%;
+          top: 0%;
+        "
+      ></div>
+      <div
+        class="hidden sm:block"
+        style="
+          position: absolute;
+          top: 0%;
+          /* right: 20px; */
+          background: url(/aboutus/background/rounded-bg.png);
+          width: 100%;
+          z-index: 3;
+          height: 100%;
+          background-position: 200px 0px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        "
+      ></div>
+      <div
+        class="hidden sm:block"
+        style="
+          background: url(/aboutus/background/Image\ 4.png);
+          width: 100%;
+          top: 0%;
+          right: 0%;
+          z-index: 2;
+          position: absolute;
+          height: 100%;
+          clip-path: inset(0px 0px 0px 300px);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></div>
+      <!-- <div
+        class="hideDiv hidden absolute p-4 gap-8 flex-col items-center bg-gray-200 left-0 top-0 sm:flex sm:flex-row sm:gap-x-8 sm:p-4 sm:w-full h-auto
       >
-        <img src="/cancel.png" alt="" class="cancel" />
-        <img src="logo.png" alt="" />
+        <img src="/cancel.png" alt="" class="sm:hidden" />
+        <img src="logo.png" alt="" class="sm:w-1/4" />
         <p><a href="/index.html">Home</a></p>
         <p><a href="/aboutus/about.html">About</a></p>
         <p><a href="">Projects</a></p>
         <p><a href="/store/store.html">Store</a></p>
         <p><a href="/FAQS/FAQS.html">FAQS</a></p>
         <p><a href="/contactus/contact.html">Contact Us</a></p>
+      </div> -->
+      <div
+        class="hideDiv hidden absolute p-4 gap-8 flex-col items-center bg-gray-200 left-0 top-0 sm:flex sm:flex-row sm:gap-x-8 sm:p-4 sm:bg-transparent sm:pl-8"
+      >
+        <img src="/cancel.png" alt="" class="cancel sm:hidden" />
+
+        <img src="logo.png" alt="" class="cancelones" />
+        <p><a href="/index.html">Home</a></p>
+        <p><a href="/aboutus/about.html">About</a></p>
+        <p><a href="">Projects</a></p>
+        <p><a href="/store/store.html">Store</a></p>
+        <p><a href="/FAQS/FAQS.html">FAQS</a></p>
+        <p>
+          <a href="/contactus/contact.html">Contact Us</a>
+        </p>
       </div>
+
       <div class="ham-menu">
         <svg
-          class="svg"
+          class="svg sm:hidden"
           width="34"
           height="36"
           viewBox="0 0 34 36"
@@ -54,9 +116,9 @@
           />
         </svg>
       </div>
-      <div class="text sm:bg-blue-200 md:bg-green-200">
+      <div class="text sm:absolute">
         <h1
-          class="sm:text-black text-white text-4xl leading-normal font-extrabold tracking-normal"
+          class="text-white text-4xl leading-normal font-extrabold tracking-normal"
         >
           Sustainable solar Electricity for
         </h1>
@@ -72,22 +134,21 @@
           markets.
         </p>
       </div>
-      <div class="sameDiv"></div>
+      <div
+        class="sameDiv sm:grid grid-cols-2 place-items-center gap-x-12"
+      ></div>
     </div>
     <div class="section-1 w-full pb-8 bg-black text-white">
-      <div class="aboutUS">
+      <div class="aboutUS text-center p-4">
+        <h1 class="pb-8 text-3xl font-bold">About US</h1>
+        <p class="pb-8">
+          Our mission is to deliver energy solutions for productive use. We do
+          this by deploying products, services and systems that power homes and
+          business operations and improve economic outcomes for our clients.​
+        </p>
         <div
-          class="aboutUsDiv p-4 justify-center flex flex-col items-center w-full mb-4"
-          style="text-align: center"
-        >
-          <h1 class="pb-8 text-3xl font-bold">About US</h1>
-          <p class="pb-8">
-            Our mission is to deliver energy solutions for productive use. We do
-            this by deploying products, services and systems that power homes
-            and business operations and improve economic outcomes for our
-            clients.​
-          </p>
-        </div>
+          class="aboutUsDiv p-4 justify-center flex flex-col items-center w-full text-center sm:grid place-items-center grid-cols-2"
+        ></div>
       </div>
       <div
         class="know-more flex w-full text-center items-center justify-center"
@@ -102,7 +163,7 @@
           End to end solutions for economic clusters.
         </p>
       </div>
-      <div class="sameFour grid place-items-center"></div>
+      <div class="sameFour grid place-items-center sm:grid-cols-2"></div>
     </div>
 
     <div class="text-center bg-black grid place-items-center pt-8 pb-8">
@@ -114,12 +175,18 @@
         have flipped the switch to UNAB global energy limited.
       </p>
       <div class="cl-h1">
-        <h1 class="text-3xl my-12 text-white" style="width: 280px">Clients</h1>
-        <div class="clients w-full grid place-items-center grid-cols-2"></div>
+        <h1 class="text-3xl my-12 text-white w-full">Clients</h1>
+        <div
+          class="clients w-full grid place-items-center grid-cols-2 sm:grid-cols-4 sm:gap-x-12"
+        ></div>
       </div>
       <div class="p-h1">
-        <h1 class="text-white text-3xl my-12" style="width: 280px">Partners</h1>
-        <div class="partner grid place-items-center grid-cols-2"></div>
+        <h1 class="text-white text-3xl my-12 sm:text-center sm:w-full">
+          Partners
+        </h1>
+        <div
+          class="partner grid place-items-center grid-cols-2 sm:grid-cols-4 sm:gap-x-12"
+        ></div>
       </div>
     </div>
     <div class="vid">

@@ -12,6 +12,10 @@ header {
   gap: 3rem;
   background: linear-gradient(335deg, rgb(13, 143, 65), black 60%);
 }
+.hideDiv a.active {
+  background-color: green;
+  color: white;
+}
 .hideDiv {
   width: 287px;
   height: 100vh;
@@ -184,5 +188,30 @@ footer {
   }
   .button > button:first-child {
     text-align: center;
+  }
+}
+@media (min-width: 640px) {
+  .hideDiv {
+    height: 80px;
+    z-index: 10;
+    width: 600px;
+  }
+  .hideDiv > p > a {
+    color: #fff;
+    font-size: 12px;
+  }
+  .cancelones {
+    width: 70px;
+    height: 70px;
+  }
+  .text {
+    z-index: 10;
+    top: 100px;
+  }
+  header {
+    background: gray;
+  }
+  .text {
+    width: 350px;
   }
 }
