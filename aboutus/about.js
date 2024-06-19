@@ -118,14 +118,14 @@ let firstOBJ = focusObjs[0];
 focusArea.innerHTML += `
 <div class="w-full grid place-items-center gap-y-12 px-3 text-center">
 <h1 class="text-3xl font-bold">${firstOBJ.h1}</h1>
-<p style="font-size:14px; width:290px;" class="text-#131313">${firstOBJ.p}</p>
+<p style="font-size:14px; width:95%;" class="text-#131313">${firstOBJ.p}</p>
 </div>    
 `;
 for (let i = 1; i < focusObjs.length; i++) {
   focusArea.innerHTML += `
   <div class="w-full text-center my-4 grid place-items-center mb-12">
     <h1 class ="text-2xl font-bold text-green-600">${focusObjs[i].h1}</h1>
-    <p class="text-1xl" style="width:290px;">${focusObjs[i].p}</p>
+    <p class="text-1xl" style="width:95%;">${focusObjs[i].p}</p>
   </div>
   `;
 }

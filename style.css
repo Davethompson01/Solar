@@ -156,14 +156,6 @@ footer {
 }
 
 @media (min-width: 450px) {
-  /* Targeting direct children <img> elements of <div> elements inside .clients */
-  .clients {
-    display: flex;
-  }
-  .clients > div > img {
-    width: 250px;
-    height: 150px;
-  }
   .threePics img {
     width: 300px;
     height: 200px;
@@ -192,7 +184,5 @@ footer {
   }
   .button > button:first-child {
     text-align: center;
-
-    /* padding: 1rem 3rem; */
   }
 }

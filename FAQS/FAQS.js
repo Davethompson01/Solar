@@ -226,8 +226,8 @@ let solarOBJS = [
 solarOBJS.map((solarOBJ) => {
   solarBenefits.innerHTML += `
   <div class = "flex justify-between items-center border-b-2 border-green-200 gap-x-8 py-2">
-  <p>${solarOBJ.p}</p>
-  <h1>${solarOBJ.icon}</h1>
+  <h1>${solarOBJ.p}</h1>
+  <p class="font-semibold">${solarOBJ.icon}</p>
   </div>
   `;
 });
