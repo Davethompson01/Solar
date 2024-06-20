@@ -50,10 +50,11 @@ let swaps = [
 
 swaps.map((swap) => {
   sellDiv.innerHTML += `
-  <div class="bg-white mt-8 rounded-lg grid place-items-center " style="height:280px;">
+  <div class="bg-white mt-8 rounded-lg grid place-items-center h-auto gap-y-8">
   <div>${swap.svg}</div>
-  <h1 class="text-green-800 font-bold" style="font-size:23px;">${swap.sell}</h1>
-  <p class="text-center" style="width:250px; font-size:14px;">${swap.small}</p>
+  <h1 class="text-green-800 font-bold text-center" style="font-size:23px;">${swap.sell}</h1>
+  <p class="text-center text-lg font-bold " style="color:#131313CC;
+"> ${swap.small}</p>
   </div>
   `;
 });
