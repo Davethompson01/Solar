@@ -12,11 +12,15 @@
   </head>
 
   <body>
-    <div class="bg-custom text-white grid gap-y-7 py-5 px-4">
+    <div
+      class="bg-custom w-full bg-cover bg-no-repeat relative text-white grid gap-y-7 py-5 px-4"
+    >
       <header>
-        <div class="hideDiv">
-          <img src="/cancel.png" alt="" class="cancel" />
-          <img src="/logo.png" alt="" />
+        <div
+          class="hideDiv hidden absolute p-4 items-center gap-y-8 flex-col top-0 left-0 sm:absolute sm:flex sm:flex-row sm:gap-x-8 sm:p-4 sm:bg-transparent sm:pl-8"
+        >
+          <img src="/cancel.png" alt="" class="cancel absolute sm:hidden" />
+          <img src="/logo.png" alt="" class="cancelones" />
           <p><a href="/index.html">Home</a></p>
           <p><a href="/aboutus/about.html">About</a></p>
           <p><a href="">Projects</a></p>
@@ -26,7 +30,7 @@
         </div>
         <div class="ham-menu">
           <svg
-            class="svg"
+            class="svg sm:hidden"
             width="34"
             height="36"
             viewBox="0 0 34 36"
@@ -54,7 +58,7 @@
           </svg>
         </div>
       </header>
-      <h1 class="wantabsolute text-white">
+      <h1 class="wantabsolute text-white sm:absolute">
         Delivering Alternative
         <span style="color: rgb(226, 123, 22)"> Energy </span> Solutions
       </h1>

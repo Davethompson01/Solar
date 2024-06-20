@@ -166,6 +166,7 @@ let threeImg = [
   { image: `/three background pics/Frame 712.png` },
   { image: `/three background pics/Frame 712.png` },
 ];
+
 threeImg.map((three) => {
   threepics.innerHTML += `
   <div class="p-4 grid place-items-center ">
@@ -201,7 +202,7 @@ rounds.forEach((round) => {
   rounded.innerHTML += `
         <div class="mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray; width:280px;">
             <img src="${round.image}" style="width: 280px;height:300px;">
-            <h1 style="font-size: 24px; color: #35A137;">${round.sell}</h1>
+            <h1 style="font-size: 24px; color: #35A137;" class="font-bold">${round.sell}</h1>
             <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
         </div>
     `;

@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 header {
-  height: 450px;
+  height: 100vh;
   gap: 3rem;
   background: linear-gradient(335deg, rgb(13, 143, 65), black 60%);
 }
@@ -206,7 +206,7 @@ footer {
   }
   .text {
     z-index: 10;
-    top: 100px;
+    top: 150px;
   }
   header {
     background: gray;
@@ -216,5 +216,9 @@ footer {
   }
   .caseStudies > p {
     width: 570px;
+  }
+  .more > p {
+    background-color: #e27b16;
+    width: 500px;
   }
 }
