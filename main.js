@@ -168,7 +168,7 @@ let threeImg = [
 ];
 threeImg.map((three) => {
   threepics.innerHTML += `
-  <div class="p-4 grid place-items-center">
+  <div class="p-4 grid place-items-center ">
   <img src="${three.image}" alt="" class="w-full" style="height:100%;"/>
   </div>
   `;
