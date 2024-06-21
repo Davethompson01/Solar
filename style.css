@@ -90,13 +90,7 @@ button > a {
   border-radius: 12px;
   border: 1px solid #e27b16;
 }
-/* .caseStudies {
-  margin-top: 2rem;
-  gap: 2.5rem;
-} */
-.caseStudies > p {
-  width: 280px;
-}
+
 .threePics > p {
   border: 1px solid #e27b16;
   padding: 1rem;
@@ -157,31 +151,6 @@ footer {
   .threePics img {
     width: 300px;
     height: 200px;
-  }
-  .caseStudies > p {
-    width: 400px;
-  }
-  .endSolution {
-    display: flex;
-    justify-content: space-between;
-  }
-  .first {
-    flex-basis: 70%;
-  }
-  .button {
-    flex-basis: 30%;
-  }
-  .button > button {
-    /* padding: 1rem 2rem; */
-    text-align: center;
-    width: 150px;
-    /* background-color: #000; */
-  }
-  .button > button > a {
-    font-size: 13px;
-  }
-  .button > button:first-child {
-    text-align: center;
   }
 }
 @media (min-width: 640px) {

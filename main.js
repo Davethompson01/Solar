@@ -130,10 +130,10 @@ let qualitys = [
 
 qualitys.map((quality) => {
   sellFour.innerHTML += `
-  <div class="bg-white mt-8 rounded-lg grid place-items-center" style="width:280px;height:290px;"> 
+  <div class="bg-white mt-8 rounded-lg grid place-items-center text-center h-auto w-full p-6 gap-y-6"> 
   <div>${quality.svg}</div>
   <h1 style="font-size:24px; color:#35A137;">${quality.sell}</h1>
-  <p style="font-size:16px;width:280px;" class="text-center">${quality.small}</p>
+  <p class=" text-center text-lg font-bold ">${quality.small}</p>
   </div>
   `;
 });
@@ -190,8 +190,7 @@ let rounds = [
         on the UNAB team.`,
   },
   {
-    image: `
-        /rounded/Rectangle 130.png
+    image: `/rounded/Rectangle 130.png
         `,
     sell: `Career`,
     small: `Explore available opportunities 
@@ -201,10 +200,10 @@ let rounds = [
 
 rounds.forEach((round) => {
   rounded.innerHTML += `
-        <div class="mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray; width:280px;">
-            <img src="${round.image}" style="width: 280px;height:300px;">
+        <div class="w-full mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray;">
+            <img src="${round.image}" class="w-full h-auto" alt="" / >
             <h1 style="font-size: 24px; color: #35A137;" class="font-bold">${round.sell}</h1>
-            <p style=" font-size: 13px; width: 220px; text-align: center; color: #585858;">${round.small}</p>
+            <p style=" font-size: 13px; text-align: center; color: #585858;">${round.small}</p>
         </div>
     `;
 });
