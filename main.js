@@ -53,23 +53,12 @@ swaps.map((swap) => {
   <div class="bg-white mt-8 rounded-lg grid place-items-center h-auto gap-y-8">
   <div>${swap.svg}</div>
   <h1 class="text-green-800 font-bold text-center" style="font-size:23px;">${swap.sell}</h1>
-  <p class="text-center text-lg font-bold " style="color:#131313CC;
+  <p class="text-center text-lg font-bold max-w-3xl" style="color:#131313CC;
 "> ${swap.small}</p>
   </div>
   `;
 });
-for (let i = 1; i < swaps.length; i++) {
-  swaps.map((swap) => {
-    sellDiv.innerHTML += `
-  <div class="bg-white mt-8 rounded-lg grid place-items-center h-auto gap-y-8">
-  <div>${swap.svg}</div>
-  <h1 class="text-green-800 font-bold text-center" style="font-size:23px;">${swap.sell}</h1>
-  <p class="text-center text-lg font-bold " style="color:#131313CC;
-"> ${swap.small}</p>
-  </div>
-  `;
-  });
-}
+
 let aboutUs = document.querySelector(".aboutUsDiv");
 let happys = [
   {
@@ -89,10 +78,11 @@ let happys = [
     text: `Years in Business`,
   },
 ];
+
 happys.map((happy) => {
   let gradient = "linear-gradient( #d2e115, #24a237)";
   aboutUs.innerHTML += `
-  <div style="width:260px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7 ">
+  <div style="width:245px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7">
   <h1 style="font-size:2.6rem;" class="font-bold">${happy.number}</h1>
   <p style="font-size:14px;" class="font-semibold">${happy.text}</p>
   </div>
@@ -142,7 +132,7 @@ let qualitys = [
 
 qualitys.map((quality) => {
   sellFour.innerHTML += `
-  <div class="bg-white mt-8 rounded-lg grid place-items-center text-center h-auto w-full p-6 gap-y-6"> 
+  <div class="bg-white mt-8 rounded-lg grid place-items-center text-center w-full p-6 gap-y-6" style="height:100%"> 
   <div>${quality.svg}</div>
   <h1 style="font-size:24px; color:#35A137;">${quality.sell}</h1>
   <p class=" text-center text-lg font-bold ">${quality.small}</p>
@@ -212,10 +202,10 @@ let rounds = [
 
 rounds.forEach((round) => {
   rounded.innerHTML += `
-        <div class="w-full mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray;">
+        <div class=" max-w-2xl mt-8 rounded-lg grid gap-y-10 place-items-center pb-12" style="box-shadow: 0 0 5px gray;">
             <img src="${round.image}" class="w-full h-auto" alt="" / >
             <h1 style="font-size: 24px; color: #35A137;" class="font-bold">${round.sell}</h1>
-            <p style=" font-size: 13px; text-align: center; color: #585858;">${round.small}</p>
+            <p class="max-w-2xl text-center text-2xl font-bold;">${round.small}</p>
         </div>
     `;
 });
