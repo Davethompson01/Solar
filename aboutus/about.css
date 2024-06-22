@@ -38,11 +38,12 @@ header {
   .hideDiv {
     height: 80px;
     z-index: 10;
-    width: 600px;
+    width: 640px;
   }
   .hideDiv > p > a {
     color: #fff;
-    font-size: 12px;
+    font-weight: 550;
+    font-size: 16px;
   }
   .cancelones {
     width: 70px;

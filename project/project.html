@@ -7,14 +7,18 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="store.css" />
+    <link rel="stylesheet" href="/project/projects.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="bg-custom relative text-white grid gap-y-7 py-5 px-4">
+    <div
+      class="bg-custom relative text-white grid gap-y-7 py-5 px-4 md:bg-center md:bg-contain"
+    >
       <header>
-        <div class="hideDiv">
-          <img src="/cancel.png" alt="" class="cancel" />
+        <div
+          class="hideDiv hidden absolute p-4 gap-8 flex-col items-center bg-gray-200 left-0 top-0 sm:flex sm:flex-row sm:gap-x-8 sm:p-4 sm:bg-transparent sm:pl-8"
+        >
+          <img src="/cancel.png" alt="" class="cancel sm:hidden" />
           <img src="/logo.png" alt="" />
           <p><a href="/index.html">Home</a></p>
           <p><a href="/aboutus/about.html">About</a></p>
@@ -25,7 +29,7 @@
         </div>
         <div class="ham-menu">
           <svg
-            class="svg"
+            class="svg sm:hidden"
             width="34"
             height="36"
             viewBox="0 0 34 36"
@@ -56,40 +60,40 @@
       <h1 class="text-white absolute left-0">Coming soon</h1>
     </div>
     <footer
-    class="text-white grid gap-y-12 py-8 px-4"
-    style="height: 800px; background: url(/footer/Rectangle\ 131.png)"
-
-    <div><img src="/logo.png" alt="" /></div>
-    <div class="flex items-center justify-between">
-      <div class="grid gap-y-4" style="font-size: 13px">
-        <h1>Information</h1>
-        <p>Our Company</p>
-        <p>solar Energy solutions</p>
-        <p>Energy Calculator</p>
-        <p>Contact</p>
-        <p>Careers</p>
+      class="text-white grid gap-y-12 py-8 px-4"
+      style="height: 800px; background: url(/footer/Rectangle\ 131.png)"
+    >
+      <div><img src="/logo.png" alt="" /></div>
+      <div class="flex items-center justify-between">
+        <div class="grid gap-y-4" style="font-size: 13px">
+          <h1>Information</h1>
+          <p>Our Company</p>
+          <p>solar Energy solutions</p>
+          <p>Energy Calculator</p>
+          <p>Contact</p>
+          <p>Careers</p>
+        </div>
+        <div class="t1">
+          <h1>Quick links</h1>
+          <p>News</p>
+          <p>Blogs</p>
+          <p>whitepaper</p>
+          <p>solarBase login</p>
+        </div>
       </div>
-      <div class="t1">
-        <h1>Quick links</h1>
-        <p>News</p>
-        <p>Blogs</p>
-        <p>whitepaper</p>
-        <p>solarBase login</p>
+      <div class="grid">
+        <p>Support</p>
+        <p>123 Road Lago, Nigeria</p>
+        <p>07002288888</p>
+        <p>kelvinclarkkent@gmail.com</p>
       </div>
-    </div>
-    <div class="grid">
-      <p>Support</p>
-      <p>123 Road Lago, Nigeria</p>
-      <p>07002288888</p>
-      <p>kelvinclarkkent@gmail.com</p>
-    </div>
-    <div class="socials">
-      <h1>socials media</h1>
-    </div>
-    <div>
-      <h1></h1>
-    </div>
-  </footer>
-    <script src="store.js"></script>
+      <div class="socials">
+        <h1>socials media</h1>
+      </div>
+      <div>
+        <h1></h1>
+      </div>
+    </footer>
+    <script src="projects.js"></script>
   </body>
 </html>

@@ -34,15 +34,16 @@ header {
   top: 20px;
 }
 .bg-custom {
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-image: url(/aboutus/background/image\ 18.png);
-  height: 100vh;
+  height: 600px;
 }
 .bg-custom > h1 {
   z-index: 1;
-  top: 150px;
+  top: 100px;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 900;
 }
