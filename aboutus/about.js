@@ -87,20 +87,20 @@ let climateObjs = [
 ];
 climateObjs.forEach((climateObj) => {
   climate.innerHTML += `
-    <div class="flex flex-col gap-y-7 justify-center items-center px-4">
-    <h1 class="text-3xl text-f9fdf9" style="width:300px ;">${climateObj.h1}</h1>
+    <div class="flex flex-col justify-center items-center px-4 pt-8 sm:flex-row sm:justify-between sm:relative">
+  <div class="grid place-items-center gap-y-7 sm:text-justify"style="flex-basis:45%;">
+  <h1 class="text-3xl text-f9fdf9">${climateObj.h1}</h1>
     <p class="text-f9fdf9">${climateObj.p1}</p>
     <p>${climateObj.p2}</p>
     <p>${climateObj.p3}</p>
-    <img src="${climateObj.image}" alt="" class="w-full my-8">
+  </div>
+   <div  style="flex-basis:45%;justify-content: start;">
+    <img src="${climateObj.image}" alt="" class="w-full my-8 ">
+   </div>
     </div>  `;
 });
-let focusArea = document.querySelector(".focusArea");
+let focusArea = document.querySelector(".focusGreen");
 let focusObjs = [
-  {
-    h1: "Our Focus Area",
-    p: "We improve businesses and economic outcomes by emphasising reliable energy for productive use and reducing OPEX costs that threaten the sustainability of our target business clusters. We have perfected our role as a distributed utility by reducing pressure on the national grid and allowing local grid activity to serve industrial zones and the public good, thus stimulating economic growth.",
-  },
   {
     h1: "FOCUS 1",
     p: "We can deliver quality solutions with superior customer service and timely after-sales technical support",
@@ -114,19 +114,17 @@ let focusObjs = [
     p: "We can deliver quality solutions with superior customer service and timely after-sales technical support",
   },
 ];
-let firstOBJ = focusObjs[0];
-focusArea.innerHTML += `
-<div class="w-full grid place-items-center gap-y-12 px-3 text-center">
-<h1 class="text-3xl font-bold">${firstOBJ.h1}</h1>
-<p style="font-size:14px; width:95%;" class="text-#131313">${firstOBJ.p}</p>
-</div>    
-`;
-for (let i = 1; i < focusObjs.length; i++) {
+// let firstOBJ = focusObjs[0];
+// focusArea.innerHTML += `
+
+// `;
+for (let i = 0; i < focusObjs.length; i++) {
   focusArea.innerHTML += `
-  <div class="w-full text-center my-4 grid place-items-center mb-12">
-    <h1 class ="text-2xl font-bold text-green-600">${focusObjs[i].h1}</h1>
-    <p class="text-1xl" style="width:95%;">${focusObjs[i].p}</p>
-  </div>
+    <div class="w-full text-center my-4 grid place-items-center mb-12 md:gap-x-6
+md:mr-8">
+         <h1 class ="text-2xl font-bold text-green-600 md:text-justify ">${focusObjs[i].h1}</h1>
+         <p class="text-1xl  md:text-justify " style="width:95%;">${focusObjs[i].p}</p>
+    </div>
   `;
 }
 

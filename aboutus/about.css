@@ -53,6 +53,7 @@ header {
   }
   .wantabsolute {
     top: 130px;
+
     /* width: 300px; */
   }
   .bg-custom > h1 {

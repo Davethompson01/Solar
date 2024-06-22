@@ -103,36 +103,55 @@
       </p>
     </div>
     <div class="climate bg-black text-center text-white"></div>
-    <div class="ourMission text-center px-4 py-4">
-      <div class="my-10 grid gap-y-5 place-items-center">
-        <h1 class="text-3xl">Our Mission</h1>
-        <p style="width: 96%">
-          To deliver energy solutions for productive use by deploying products,
-          services and systems that power business operations and improve
-          economic outcomes for our clients.
-        </p>
+    <div class="ourMission text-center px-4 py-4 sm:flex sm:justify-between">
+      <div style="flex-basis: 40%">
+        <div class="my-10 grid gap-y-5 place-items-center">
+          <h1 class="text-3xl">Our Mission</h1>
+          <p style="width: 96%">
+            To deliver energy solutions for productive use by deploying
+            products, services and systems that power business operations and
+            improve economic outcomes for our clients.
+          </p>
+        </div>
+        <div class="my-10 grid gap-y-5 place-items-center">
+          <h1 class="text-3xl">Our vision</h1>
+          <p style="width: 96%">
+            To provide sustainable solutions to energy reliability issues across
+            emerging markets.
+          </p>
+        </div>
       </div>
-      <div class="my-10 grid gap-y-5 place-items-center">
-        <h1 class="text-3xl">Our vision</h1>
-        <p style="width: 96%">
-          To provide sustainable solutions to energy reliability issues across
-          emerging markets.
-        </p>
-      </div>
-      <div class="img w-full grid place-items-center">
+      <div
+        style="flex-basis: 50%"
+        class="img w-full grid place-items-center sm:relative"
+      >
         <img
           src="/aboutus/background/image 15.png"
           alt=""
-          style="width: 300px; height: 200px"
+          style="height: 340px"
+          class="sm:absolute top-0 w-full"
         />
       </div>
     </div>
-    <div class="focusArea text-white bg-black text-center py-4"></div>
+    <div class="focusArea text-white bg-black text-center py-4">
+      <div class="w-full grid place-items-center gap-y-12 px-3 text-center">
+        <h1 class="text-3xl font-bold">Our Focus Area</h1>
+        <p style="font-size: 14px; width: 95%" class="text-#131313">
+          We improve businesses and economic outcomes by emphasising reliable
+          energy for productive use and reducing OPEX costs that threaten the
+          sustainability of our target business clusters. We have perfected our
+          role as a distributed utility by reducing pressure on the national
+          grid and allowing local grid activity to serve industrial zones and
+          the public good, thus stimulating economic growth.
+        </p>
+      </div>
+      <div class="focusGreen md:flex"></div>
+    </div>
     <div
-      class="impact grid place-items-center gap-y-8 text-justify my-20 px-4 text-#131313"
+      class="impact grid place-items-center gap-y-8 text-justify my-20 px-4 text-#131313 md:flex md:justify-around md:items-start"
     >
-      <h1 class="font-semibold text-3xl">Our Impact</h1>
-      <div class="deliver-energy">
+      <div class="deliver-energy" style="flex-basis: 40%">
+        <h1 class="font-semibold text-3xl text-center mb-12">Our Impact</h1>
         <p class="font-semibold mb-4" style="color: #585858">
           To deliver energy solutions for productive use by deploying products,
           services and systems that power business operations and improve
@@ -151,31 +170,32 @@
           </li>
         </ul>
       </div>
-      <img src="/aboutus/background/image 14.png" alt="" class="" />
+      <div style="height: 100%; flex-basis: 45%" class="w-full bg-red-400">
+        <img
+          src="/aboutus/background/image 14.png"
+          alt=""
+          class="w-full h-auto"
+        />
+      </div>
     </div>
     <section>
       <div class="unab text-center bg-black grid place-items-center pt-8 pb-8">
-        <h1 class="text-white text-3xl my-12" style="width: 290px">
-          UNAB Clients and Partners
-        </h1>
-        <p class="text-white" style="width: 290px">
+        <h1 class="text-white text-3xl my-12">UNAB Clients and Partners</h1>
+        <p class="text-white px-8">
           Join the thousands of businesses and homeowners across the nation that
           have flipped the switch to UNAB global energy limited.
         </p>
         <div class="cl-h1">
-          <h1 class="text-white text-3xl my-12" style="width: 290px">
-            Clients
-          </h1>
-          <div class="clients grid grid-cols-2"></div>
+          <h1 class="text-white text-3xl my-12">Clients</h1>
+          <div class="clients grid grid-cols-2 md:flex gap-x-8"></div>
         </div>
         <div class="p-h1">
-          <h1
-            class="text-white text-3xl my-12 grid place-items-center"
-            style="width: 290px"
-          >
+          <h1 class="text-white text-3xl my-12 grid place-items-center">
             Partners
           </h1>
-          <div class="partner grid place-items-center grid-cols-2"></div>
+          <div
+            class="partner grid place-items-center grid-cols-2 md:flex gap-x-8"
+          ></div>
         </div>
       </div>
     </section>
