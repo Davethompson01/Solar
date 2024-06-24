@@ -54,11 +54,8 @@ header {
   }
   .wantabsolute {
     top: 130px;
-
-    /* width: 300px; */
   }
   .bg-custom > h1 {
-    /* background-color: rebeccapurple; */
     width: 480px;
   }
   .cancelones {

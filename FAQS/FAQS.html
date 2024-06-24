@@ -13,9 +13,11 @@
   <body>
     <div class="bg-custom relative text-white grid gap-y-7 py-5 px-4">
       <header>
-        <div class="hideDiv">
-          <img src="/cancel.png" alt="" class="cancel" />
-          <img src="/logo.png" alt="" />
+        <div
+          class="hideDiv hidden absolute p-4 gap-8 flex-col items-center bg-gray-200 left-0 top-0 sm:flex sm:flex-row sm:gap-x-8 sm:p-4 sm:bg-transparent sm:pl-8"
+        >
+          <img src="/cancel.png" alt="" class="cancel sm:hidden" />
+          <img src="/logo.png" alt="" class="cancelones" />
           <p><a href="/index.html">Home</a></p>
           <p><a href="/aboutus/about.html">About</a></p>
           <p><a href="/project/project.html">Projects</a></p>
@@ -25,7 +27,7 @@
         </div>
         <div class="ham-menu">
           <svg
-            class="svg"
+            class="svg sm:hidden"
             width="34"
             height="36"
             viewBox="0 0 34 36"
