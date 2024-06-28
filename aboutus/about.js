@@ -1,3 +1,6 @@
+import { loadNav } from './main.js';
+
+
 const interactions = {
   block: document.querySelector(".svg"),
   hideDiv: document.querySelector(".hideDiv"),
