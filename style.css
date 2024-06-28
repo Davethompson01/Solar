@@ -157,11 +157,12 @@ footer {
   .hideDiv {
     height: 80px;
     z-index: 10;
-    width: 600px;
+    width: 640px;
   }
   .hideDiv > p > a {
     color: #fff;
-    font-size: 12px;
+    font-weight: 550;
+    font-size: 16px;
   }
   .cancelones {
     width: 50px;
@@ -169,6 +170,7 @@ footer {
   }
   .text {
     z-index: 10;
+    width: 400px;
     top: 150px;
   }
   header {
@@ -178,5 +180,10 @@ footer {
   .more > p {
     background-color: #e27b16;
     width: 500px;
+  }
+}
+@media (min-width: 740px) {
+  .text h1{
+    width: 600px;
   }
 }
