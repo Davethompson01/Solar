@@ -34,7 +34,7 @@ header {
 .bg-custom > h1 {
   z-index: 1;
   top: 150px;
-  font-size: 48px;
+  /* font-size: 48px; */
   font-weight: 600;
 }
 @media (min-width: 640px) {
@@ -48,6 +48,10 @@ header {
     color: #fff;
     font-weight: 550;
     font-size: 16px;
+  }
+  .bg-custom > h1 {
+    z-index: 1;
+    top: 200px;
   }
   .cancelones {
     width: 50px;
