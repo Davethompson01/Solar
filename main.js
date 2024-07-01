@@ -31,7 +31,26 @@ Recommendation`,
     img: `
        /sell swap/image 26.jpg
         `,
-    sell: `Installation and Commisioning and Swap`,
+    sell: `Installation and Commisioning`,
+  },
+  {
+    img: `
+       /sell swap/image 26.jpg
+        `,
+    sell: `Financing`,
+  },
+  {
+    img: `
+       /sell swap/image 26.jpg
+        `,
+    sell: `Operation and maintenance`,
+  },
+  {
+    img: `
+       /sell swap/image 26.jpg
+        `,
+    sell: `Energy Audit and Load
+Balancing`,
   },
 ];
 
@@ -48,29 +67,34 @@ swaps.map((swap) => {
 let aboutUs = document.querySelector(".aboutUsDiv");
 let happys = [
   {
-    number: `266+`,
-    text: `Happy Paying Customers`,
+    img: `/focus Area/Frame 899.jpg`,
+    text: `Contribute in the reduction 
+of energy poverty.`,
   },
   {
-    number: `2MW+`,
-    text: `Current Installed Capacity`,
+    img: `/focus Area/Frame 883.jpg`,
+    text: `Reduce operational energy
+expense for Cad1 SAIE’s and
+Healthcare.`,
   },
   {
-    number: `9MWh+`,
-    text: `Current Storage Capacity`,
+    img: `/focus Area/Frame 882.jpg`,
+    text: `Provide reliable clean and
+eco-friendly power supply.`,
   },
   {
-    number: `7+`,
-    text: `Years in Business`,
+    img: `/focus Area/Frame.jpg`,
+    text: `Reduce Co2 emissions and
+green house effect.`,
   },
 ];
 
 happys.map((happy) => {
-  let gradient = "linear-gradient( #d2e115, #24a237)";
+  // let gradient = "linear-gradient( #d2e115, #24a237)";
   aboutUs.innerHTML += `
-  <div style="width:245px;height:120px;background:${gradient};" class="rounded-lg flex flex-col justify-center mt-7">
-  <h1 style="font-size:2.6rem;" class="font-bold">${happy.number}</h1>
-  <p style="font-size:14px;" class="font-semibold">${happy.text}</p>
+  <div class="rounded-lg flex flex-col items-center justify-center gap-y-8 mt-7">
+ <img src="${happy.img}" style="width:100px;height:100px;" class="rounded-lg">
+  <p class="w-full text-base" style="width:220px;">${happy.text}</p>
   </div>
   `;
 });
@@ -129,10 +153,10 @@ qualitys.map((quality) => {
 let partner = document.querySelector(".partner");
 let client = document.querySelector(".clients");
 let clientObject = [
-  { image: `/cl and partner/image 10.png` },
-  { image: `/cl and partner/image 10.png` },
-  { image: `/cl and partner/image 10.png` },
-  { image: `/cl and partner/image 10.png` },
+  { image: `/cl and partner/image 54.png` },
+  { image: `/cl and partner/image 40.png` },
+  { image: `/cl and partner/image 38.png` },
+  { image: `/cl and partner/image 55.png` },
 ];
 clientObject.map((object) => {
   client.innerHTML += `

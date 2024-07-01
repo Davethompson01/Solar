@@ -146,7 +146,6 @@ footer {
 .socials > h1 {
   font-size: 1.4rem;
 }
-
 @media (min-width: 450px) {
   .threePics img {
     width: 300px;
@@ -183,7 +182,7 @@ footer {
   }
 }
 @media (min-width: 740px) {
-  .text h1{
+  .text h1 {
     width: 600px;
   }
 }
