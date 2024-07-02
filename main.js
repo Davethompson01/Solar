@@ -166,13 +166,6 @@ clientObject.map((object) => {
   `;
 });
 
-clientObject.map((object) => {
-  partner.innerHTML += `
-  <div>
-  <img src="${object.image}" style=" width:140px;" alt="CLIENT" />
-  </div>
-  `;
-});
 let threepics = document.querySelector(".threePics");
 let threeImg = [
   { image: `/three background pics/Frame 712.png` },
