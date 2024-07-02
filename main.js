@@ -150,7 +150,7 @@ qualitys.map((quality) => {
   `;
 });
 
-let partner = document.querySelector(".partner");
+
 let client = document.querySelector(".clients");
 let clientObject = [
   { image: `/cl and partner/image 54.png` },
